@@ -17,8 +17,8 @@
   
   <entry>
     <title>Dev-Config</title>
-    <link href="http://wiki.baixin.io/2016/06/20/Dev-%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/"/>
-    <id>http://wiki.baixin.io/2016/06/20/Dev-配置记录/</id>
+    <link href="http://wiki.baixin.io/2016/06/20/Dev-Config/"/>
+    <id>http://wiki.baixin.io/2016/06/20/Dev-Config/</id>
     <published>2016-06-19T16:00:00.000Z</published>
     <updated>2016-06-20T01:18:35.000Z</updated>
     
@@ -37,11 +37,34 @@
   </entry>
   
   <entry>
+    <title>配置记录</title>
+    <link href="http://wiki.baixin.io/2016/06/20/Dev-%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/"/>
+    <id>http://wiki.baixin.io/2016/06/20/Dev-配置记录/</id>
+    <published>2016-06-19T16:00:00.000Z</published>
+    <updated>2016-06-21T02:13:11.000Z</updated>
+    
+    <content type="html">&lt;p&gt;一些常用的配置&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Mac配置&quot;&gt;&lt;a href=&quot;#Mac配置&quot; class=&quot;headerlink&quot; title=&quot;Mac配置&quot;&gt;&lt;/a&gt;Mac配置&lt;/h2&gt;&lt;p&gt;1、生成SSHKey过程&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1.查看是否已经有了ssh密钥：`cd ~/.ssh` ，如果没有密钥则不会有此文件夹，有则备份删除。    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2.生存密钥：ssh-keygen -t rsa -C “test@gmail.com”。   按3个回车，密码为空。       &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Your identification has been saved in /home/tekkub/.ssh/id_rsa.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Your public key has been saved in /home/tekkub/.ssh/id_rsa.pub.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;The key fingerprint is:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;………………&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;最后得到了两个文件：id_rsa和id_rsa.pub&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;``` &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;## 项目版本控制配置  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1、mac `versions` 添加.a库   &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;```  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Xcode自带的svn和Versions以及一些其它工具都不能上传&amp;quot;.a&amp;quot;文件。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 打开终端，输入cd，空格，然后将需要上传的.a文件所在的文件夹（不是.a文件）拖拽到终端（此办法无需输入繁琐的路径，快捷方便） 回车&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 之后再输入如下命令：svn add libGoogleAnalytics.a，回车；&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 之后会出现：A  (bin)  libGoogleAnalytics.a&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;表示添加成功，打开Versions就可以看到，刚才添加的.a文件，此时就可以手动上传了。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;另外，请注意路径的正确性。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一些常用的配置&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Dev" scheme="http://wiki.baixin.io/tags/Dev/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Dev-Article</title>
     <link href="http://wiki.baixin.io/2016/06/15/Dev-Article/"/>
     <id>http://wiki.baixin.io/2016/06/15/Dev-Article/</id>
     <published>2016-06-14T16:00:00.000Z</published>
-    <updated>2016-06-20T01:54:36.000Z</updated>
+    <updated>2016-06-21T02:15:42.000Z</updated>
     
     <content type="html">&lt;p&gt;一些经典文章收集&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -61,6 +84,8 @@
     
     </summary>
     
+    
+      <category term="文章收集" scheme="http://wiki.baixin.io/tags/%E6%96%87%E7%AB%A0%E6%94%B6%E9%9B%86/"/>
     
   </entry>
   
@@ -132,8 +157,8 @@
   
   <entry>
     <title>Information</title>
-    <link href="http://wiki.baixin.io/2016/06/08/Information/"/>
-    <id>http://wiki.baixin.io/2016/06/08/Information/</id>
+    <link href="http://wiki.baixin.io/2016/06/08/Database/"/>
+    <id>http://wiki.baixin.io/2016/06/08/Database/</id>
     <published>2016-06-07T16:00:00.000Z</published>
     <updated>2016-06-13T05:59:29.000Z</updated>
     
@@ -153,13 +178,37 @@
   </entry>
   
   <entry>
-    <title>ML-Note</title>
+    <title>Database</title>
+    <link href="http://wiki.baixin.io/2016/06/08/Information/"/>
+    <id>http://wiki.baixin.io/2016/06/08/Information/</id>
+    <published>2016-06-07T16:00:00.000Z</published>
+    <updated>2016-06-21T02:13:35.000Z</updated>
+    
+    <content type="html">&lt;p&gt;日常收集的资料&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;资料收集&quot;&gt;&lt;a href=&quot;#资料收集&quot; class=&quot;headerlink&quot; title=&quot;资料收集&quot;&gt;&lt;/a&gt;资料收集&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://zh-hans.khanacademy.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;可汗学院&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/vsouza/awesome-ios&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;awesome-ios&lt;/a&gt;、&lt;a href=&quot;https://github.com/jobbole/awesome-ios-cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;awesome-ios-cn&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/ipader/SwiftGuide&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;SwiftGuide&lt;/a&gt;   &lt;/p&gt;
+&lt;h4 id=&quot;iOS&quot;&gt;&lt;a href=&quot;#iOS&quot; class=&quot;headerlink&quot; title=&quot;iOS&quot;&gt;&lt;/a&gt;iOS&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://www.cocoachina.com/bbs/job.php?action=download&amp;amp;aid=33531&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;核心动画编程指南&lt;/a&gt;、&lt;a href=&quot;https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Core Animation&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cocoachina.com/bbs/job.php?action=download&amp;amp;aid=36779&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Instruments 用户指南&lt;/a&gt;      &lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;日常收集的资料&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="资料" scheme="http://wiki.baixin.io/tags/%E8%B5%84%E6%96%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MachineLearning</title>
     <link href="http://wiki.baixin.io/2016/06/06/ML-Note/"/>
     <id>http://wiki.baixin.io/2016/06/06/ML-Note/</id>
     <published>2016-06-05T16:00:00.000Z</published>
-    <updated>2016-06-21T02:06:12.000Z</updated>
+    <updated>2016-06-21T02:16:17.000Z</updated>
     
-    <content type="html">&lt;p&gt;机器学习零散笔记&lt;/p&gt;
+    <content type="html">&lt;p&gt;机器学习资料收集和个人笔记&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;资源集合&quot;&gt;&lt;a href=&quot;#资源集合&quot; class=&quot;headerlink&quot; title=&quot;资源集合&quot;&gt;&lt;/a&gt;资源集合&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://suanfazu.com/t/topic/15/1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习经典书籍&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.52cs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我爱计算机&lt;/a&gt;      &lt;/p&gt;
 &lt;h2 id=&quot;个人笔记&quot;&gt;&lt;a href=&quot;#个人笔记&quot; class=&quot;headerlink&quot; title=&quot;个人笔记&quot;&gt;&lt;/a&gt;个人笔记&lt;/h2&gt;&lt;h3 id=&quot;SVM&quot;&gt;&lt;a href=&quot;#SVM&quot; class=&quot;headerlink&quot; title=&quot;SVM&quot;&gt;&lt;/a&gt;SVM&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;名词解释：&lt;/strong&gt; Support Vector Machine 支持向量机，是一个有监督的学习模型。&lt;br&gt;&lt;strong&gt;用途：&lt;/strong&gt; 用来支撑区分数据的一个超平面，用于解决分类问题。&lt;br&gt;&lt;strong&gt;调参：&lt;/strong&gt; 任何数据模型都可以通过一些方式来调整成两组数据，然后使用支持向量机。&lt;br&gt;&lt;strong&gt;调参例子：&lt;/strong&gt; 例如桌上一组无规则的纸团，可以通过拍桌子，看纸团弹跳的高度来区分成两组数据。&lt;/p&gt;
@@ -167,10 +216,12 @@
     
     <summary type="html">
     
-      &lt;p&gt;机器学习零散笔记&lt;/p&gt;
+      &lt;p&gt;机器学习资料收集和个人笔记&lt;/p&gt;
     
     </summary>
     
+    
+      <category term="机器学习" scheme="http://wiki.baixin.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
