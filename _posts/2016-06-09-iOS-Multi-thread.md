@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iOS-Multi-thread
+title: iOS多线程  
 date: 2016-06-09 
 ---
 
@@ -8,7 +8,6 @@ date: 2016-06-09
 iOS多线程资料收集与总结，以GCD为主。
 
 <!--more-->
-
 
 **资料收集：**     
 [Grand Central Dispatch (GCD) Reference](https://developer.apple.com/library/mac/documentation/Performance/Reference/GCD_libdispatch_Ref/index.html)        

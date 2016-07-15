@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Dev-Article
+title: 经典文章收集
 date: 2016-06-15
 tag: 文章收集   
 ---
 
-一些经典文章收集
 
-<!--more-->
+
 
 ## 搜索技巧
 [Google 搜索技巧](http://wdxtub.com/2016/03/26/google-tip/)    
@@ -44,7 +43,9 @@ tag: 文章收集
 [iOS崩溃调试的使用和技巧总结](http://www.wtoutiao.com/p/10dcQyX.html)     
 [手把手教你如何分析iOS系统栈Crash](http://www.cocoachina.com/ios/20151210/14619.html)     
 [EXC_BAD_ACCESS的本质详解以及僵尸模式调试原理](http://www.cocoachina.com/cms/wap.php?action=article&id=15324)     
-[Symbolicating iPhone App Crash Reports](http://stackoverflow.com/questions/1460892/symbolicating-iphone-app-crash-reports?rq=1)     
+[Symbolicating iPhone App Crash Reports](http://stackoverflow.com/questions/1460892/symbolicating-iphone-app-crash-reports?rq=1)    
+[iOS调试技巧](http://www.hotobear.com/?page_id=505)    
+ 
 
 
 ## 面试   
